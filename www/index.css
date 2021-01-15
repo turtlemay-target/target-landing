@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+::selection {
+  color: white;
+  background-color: black;
+}
+
+.mainRoot {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.mainRoot > :first-child {
+  flex: 1;
+}
+
+.mainTopSection {
+  background: #e9e9e9;
+  font-size: 16px;
+  display: flex;
+}
+
+.mainTopSection > * {
+  margin: 2em;
+}
+
+.mainTopSection > *:last-child {
+  flex: 1;
+}
+
+.mainFooter {
+  text-align: center;
+  font: 1.5em sans-serif;
+  color: #999;
+  padding: 0.25em;
+}
+
+.mainHeader .headerTitle {
+  display: inline-block;
+  background: rgb(204, 0, 0);
+  color: white;
+  font: 1em sans-serif;
+  text-align: center;
+  padding: 0.25em 1em;
+  margin: 0 auto 1em;
+  white-space: nowrap;
+}
+
+.mainHeader .headerText {
+  font: 1em sans-serif;
+  color: #666;
+  max-width: 20em;
+}
+
+.mainHeader .headerContact {
+  margin: 1em 0;
+}
+
+.mainHeader .headerContact .text {
+  color: #c00;
+  transition: all 200ms;
+  font: bold 1em sans-serif;
+}
+
+.mainHeader .headerContact:hover .text {
+  text-decoration: underline;
+}
+
+.mainHeader .headerContact:active .text {
+  filter: opacity(0.6);
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projectsList li {
+  margin: 0 0 1em;
+  min-width: 30em;
+}
+
+.featuredItem {
+  padding: 1em;
+  border-radius: 8px;
+  background: #111;
+  color: white;
+  transition: all 200ms;
+  font: 1em sans-serif;
+  white-space: nowrap;
+}
+
+.featuredItem__layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featuredItem:hover {
+  filter: contrast(0.75);
+  cursor: pointer;
+}
+
+.featuredItem:active {
+  transform: scale(0.95);
+}
+
+.featuredItem .projectIcon img {
+  --size: 5em;
+  width: var(--size);
+  height: var(--size);
+}
+
+.featuredItem .projectInfo {
+  margin: 0 0 0 1em;
+}
+
+.featuredItem .projectName {
+  font-size: 2em;
+  color: white;
+}
+
+.featuredItem .projectVersion {
+  opacity: 0.1;
+  font-size: 0.5em;
+}
+
+.featuredItem .projectDescription {
+  font-size: 1em;
+  color: #666;
+}
+
+.regularItem {
+  font: 1em sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1em;
+  transition: all 200ms;
+  background: white;
+}
+
+.regularItem__layout {
+  display: flex;
+  align-items: center;
+}
+
+.regularItem:hover {
+  filter: brightness(0.95);
+  cursor: pointer;
+  border-color: black;
+}
+
+.regularItem:active {
+  transform: scale(0.98);
+}
+
+.regularItem .projectIcon {
+  font: 2em sans-serif;
+  filter: grayscale(1);
+  margin: 0 0.5em 0 0;
+}
+
+.regularItem .projectName {
+  font: bold 1em sans-serif;
+  color: #111;
+}
+
+.regularItem .projectVersion {
+  opacity: 0.2;
+}
+
+.regularItem .projectDescription {
+  font: 1em sans-serif;
+  color: #666;
+}
