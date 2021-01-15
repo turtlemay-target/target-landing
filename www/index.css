@@ -94,7 +94,7 @@ ul {
 }
 
 .featuredItem {
-  padding: 1em;
+  padding: 1em 2em;
   border-radius: 8px;
   background: #111;
   color: white;
@@ -106,7 +106,6 @@ ul {
 .featuredItem__layout {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .featuredItem:hover {
