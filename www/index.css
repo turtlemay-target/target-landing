@@ -185,3 +185,15 @@ ul {
   font: 1em sans-serif;
   color: #666;
 }
+
+[data-animate-content] {
+  transition: all 1000ms;
+}
+
+[data-animate-content]:empty {
+  filter: opacity(0);
+}
+
+[data-animate-content]:not(:empty) {
+  filter: opacity(1);
+}
