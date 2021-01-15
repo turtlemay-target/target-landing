@@ -68,6 +68,10 @@ ul {
   margin: 1em 0;
 }
 
+.mainHeader .headerContact .icon {
+  filter: grayscale(1);
+}
+
 .mainHeader .headerContact .text {
   color: #c00;
   transition: all 200ms;
