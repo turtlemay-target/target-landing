@@ -103,13 +103,14 @@ ul {
 }
 
 .featuredItem {
-  padding: 1em 2em;
+  padding: 0.5em 2em;
   border-radius: 8px;
   background: #111;
   color: white;
   transition: all 200ms;
   font: 1em sans-serif;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .featuredItem__layout {
@@ -130,6 +131,7 @@ ul {
   --size: 5em;
   width: var(--size);
   height: var(--size);
+  transform: scale(1.75) translateX(-15%);
 }
 
 .featuredItem .projectInfo {
