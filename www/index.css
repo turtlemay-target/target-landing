@@ -58,7 +58,7 @@ ul {
   padding: 0.25em 2em;
   margin: 0 auto 1em;
   white-space: nowrap;
-  height: 1.6em
+  height: 1.6em;
 }
 
 .mainHeader .headerTitle::before,
