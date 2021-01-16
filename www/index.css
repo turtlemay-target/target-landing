@@ -124,6 +124,7 @@ ul {
 .projectsList li {
   margin: 0 0 1em;
   min-width: 30em;
+  user-select: none;
 }
 
 .featuredItem {
@@ -156,6 +157,7 @@ ul {
   width: var(--size);
   height: var(--size);
   transform: scale(1.75) translateX(-15%);
+  pointer-events: none;
 }
 
 .featuredItem .projectInfo {
