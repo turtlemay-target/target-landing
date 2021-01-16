@@ -57,6 +57,7 @@ ul {
 }
 
 .mainHeader .headerTitle {
+  --size: 1.6em;
   position: relative;
   display: inline-block;
   background: rgb(204, 0, 0);
@@ -66,7 +67,7 @@ ul {
   padding: 0.25em 2em;
   margin: 1em auto;
   white-space: nowrap;
-  height: 1.6em;
+  height: var(--size);
 }
 
 .mainHeader .headerTitle::before,
@@ -74,7 +75,7 @@ ul {
   content: "";
   border-color: rgb(204, 0, 0);
   border-style: solid;
-  border-width: 0.8em 0.4em;
+  border-width: calc(var(--size) / 2) 0.4em;
   position: absolute;
   top: 0;
   width: 0;
