@@ -93,7 +93,8 @@ ul {
   margin: 1em 0;
 }
 
-.mainHeader .headerContact .icon {
+.mainHeader .headerContact .icon::after {
+  content: attr(data-icon);
   filter: grayscale(1);
 }
 
@@ -204,7 +205,8 @@ ul {
   transform: scale(0.98);
 }
 
-.regularItem .projectIcon {
+.regularItem .projectIcon::after {
+  content: attr(data-icon);
   font: 2em sans-serif;
   filter: grayscale(1);
   margin: 0 0.5em 0 0;
