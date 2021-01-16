@@ -9,8 +9,8 @@ addEventListener("DOMContentLoaded", async function _render() {
   const appTextEl = document.querySelector("[data-id='app-version']");
   const extTextEl = document.querySelector("[data-id='ext-version']");
 
-  if (appVersion && appTextEl) appTextEl.textContent = appVersion;
-  if (extVersion && extTextEl) extTextEl.textContent = extVersion;
+  if (appVersion && appTextEl) appTextEl.value = appVersion;
+  if (extVersion && extTextEl) extTextEl.value = extVersion;
 });
 
 async function fetchVersionFromJSON(url) {

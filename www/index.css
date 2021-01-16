@@ -169,9 +169,10 @@ ul {
   color: white;
 }
 
-.featuredItem .projectVersion {
+.featuredItem .projectVersion::after {
   opacity: 0.2;
   font-size: 0.5em;
+  content: attr(value);
 }
 
 .featuredItem .projectDescription {
@@ -214,8 +215,9 @@ ul {
   color: #111;
 }
 
-.regularItem .projectVersion {
+.regularItem .projectVersion::after {
   opacity: 0.2;
+  content: attr(value);
 }
 
 .regularItem .projectDescription {
@@ -223,14 +225,10 @@ ul {
   color: #666;
 }
 
-[data-animate-content] {
-  transition: all 1000ms;
+data[data-animate-value] {
+  transition: filter 1000ms;
 }
 
-[data-animate-content]:empty {
+data[data-animate-value]:not([value]) {
   filter: opacity(0);
-}
-
-[data-animate-content]:not(:empty) {
-  filter: opacity(1);
 }
