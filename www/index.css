@@ -48,7 +48,7 @@ ul {
   text-align: center;
   font: 1.5em sans-serif;
   color: #999;
-  padding: 0.25em;
+  padding: 0.5em;
 }
 
 .mainHeader {
@@ -63,7 +63,7 @@ ul {
   font: 1em sans-serif;
   text-align: center;
   padding: 0.25em 2em;
-  margin: 0 auto 1em;
+  margin: 1em auto;
   white-space: nowrap;
   height: 1.6em;
 }
