@@ -128,7 +128,7 @@ ul {
 
 .projectsList li {
   margin: 0 0 1em;
-  min-width: 30em;
+  width: 100%;
   user-select: none;
 }
 
