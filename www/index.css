@@ -49,14 +49,38 @@ ul {
 }
 
 .mainHeader .headerTitle {
+  position: relative;
   display: inline-block;
   background: rgb(204, 0, 0);
   color: white;
   font: 1em sans-serif;
   text-align: center;
-  padding: 0.25em 1em;
+  padding: 0.25em 2em;
   margin: 0 auto 1em;
   white-space: nowrap;
+  height: 1.6em
+}
+
+.mainHeader .headerTitle::before,
+.mainHeader .headerTitle::after {
+  content: "";
+  border-color: rgb(204, 0, 0);
+  border-style: solid;
+  border-width: 0.8em 0.4em;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.mainHeader .headerTitle::before {
+  left: -0.5em;
+  border-left-color: transparent;
+}
+
+.mainHeader .headerTitle::after {
+  right: -0.5em;
+  border-right-color: transparent;
 }
 
 .mainHeader .headerText {
