@@ -149,7 +149,7 @@ ul {
 	background: #111;
 	color: white;
 	transition-duration: 200ms;
-	transition-property: filter;
+	transition-property: filter, transform;
 	font: 1em sans-serif;
 	white-space: nowrap;
 	overflow: hidden;
@@ -203,7 +203,7 @@ ul {
 	border-radius: 8px;
 	padding: 1em;
 	transition-duration: 200ms;
-	transition-property: filter, border-color;
+	transition-property: filter, transform, border-color;
 	background: white;
 }
 
