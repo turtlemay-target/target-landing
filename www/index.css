@@ -113,7 +113,8 @@ ul {
 
 .mainHeader .headerContact .text {
 	color: #c00;
-	transition: all 200ms;
+	transition-duration: 200ms;
+	transition-property: filter;
 	font: bold 1em sans-serif;
 }
 
@@ -147,7 +148,8 @@ ul {
 	border-radius: 8px;
 	background: #111;
 	color: white;
-	transition: all 200ms;
+	transition-duration: 200ms;
+	transition-property: filter;
 	font: 1em sans-serif;
 	white-space: nowrap;
 	overflow: hidden;
@@ -200,7 +202,8 @@ ul {
 	border: 1px solid #e0e0e0;
 	border-radius: 8px;
 	padding: 1em;
-	transition: all 200ms;
+	transition-duration: 200ms;
+	transition-property: filter, border-color;
 	background: white;
 }
 
@@ -242,7 +245,8 @@ ul {
 }
 
 data[data-animate-value] {
-	transition: filter 1000ms;
+	transition-duration: 1000ms;
+	transition-property: filter;
 }
 
 data[data-animate-value]:not([value]) {
