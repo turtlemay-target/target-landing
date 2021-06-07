@@ -1,6 +1,6 @@
 addEventListener("DOMContentLoaded", async function _render() {
 	const appVersion = await fetchVersionFromJSON(
-		"https://raw.githubusercontent.com/turtlemay-target/target-cashier/main/package.json"
+		"https://raw.githubusercontent.com/turtlemay/turtlemay-cashier/main/package.json"
 	);
 	const extVersion = await fetchVersionFromJSON(
 		"https://raw.githubusercontent.com/turtlemay-target/turtlemay-target/main/manifest.json"
