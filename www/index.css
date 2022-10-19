@@ -52,8 +52,8 @@ ul {
 	padding: 0.5em;
 }
 
-.mainFooter .fleur::after {
-	content: attr(data-icon);
+.mainFooter .fleur {
+	user-select: none;
 }
 
 .mainHeader {
