@@ -21,5 +21,5 @@ async function fetchVersionFromJSON(url) {
 	} catch (e) {
 		console.error(e);
 	}
-	return json["version"] ?? null;
+	return json?.["version"] ?? null;
 }
