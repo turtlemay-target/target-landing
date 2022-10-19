@@ -186,10 +186,9 @@ ul {
 	color: white;
 }
 
-.featuredItem .projectVersion::after {
+.featuredItem .projectVersion {
 	opacity: 0.2;
 	font-size: 0.75em;
-	content: attr(value);
 }
 
 .featuredItem .projectDescription {
@@ -234,9 +233,8 @@ ul {
 	color: #111;
 }
 
-.regularItem .projectVersion::after {
+.regularItem .projectVersion {
 	opacity: 0.2;
-	content: attr(value);
 }
 
 .regularItem .projectDescription {
@@ -244,11 +242,11 @@ ul {
 	color: #666;
 }
 
-data[data-animate-value] {
+.projectVersion {
 	transition-duration: 1000ms;
 	transition-property: filter;
 }
 
-data[data-animate-value]:not([value]) {
+.projectVersion:empty {
 	filter: opacity(0);
 }
