@@ -6,8 +6,8 @@ addEventListener("DOMContentLoaded", async function _render() {
 		"https://raw.githubusercontent.com/turtlemay-target/turtlemay-target/main/manifest.json"
 	);
 
-	const appTextEl = document.querySelector("[data-id='app-version']");
-	const extTextEl = document.querySelector("[data-id='ext-version']");
+	const appTextEl = document.querySelector(`[data-id="app-version"]`);
+	const extTextEl = document.querySelector(`[data-id="ext-version"]`);
 
 	if (appVersion && appTextEl) appTextEl.textContent = appVersion;
 	if (extVersion && extTextEl) extTextEl.textContent = extVersion;
