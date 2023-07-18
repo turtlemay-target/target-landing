@@ -9,13 +9,17 @@ addEventListener("DOMContentLoaded", async function _render() {
 	if (extVersion && extTextEl) extTextEl.textContent = extVersion;
 });
 
+/**
+ * @param {string} url
+ */
 async function fetchVersionFromJSON(url) {
-	let res, json;
 	try {
-		res = await fetch(url);
-		json = await res.json();
+		const res = await fetch(url);
+		const json = await res.json();
+		const v = json?.["version"];
+		return typeof v === 'string' ? v : null;
 	} catch (e) {
 		console.error(e);
+		return null;
 	}
-	return json?.["version"] ?? null;
 }
