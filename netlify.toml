@@ -1,0 +1,9 @@
+[[redirects]]
+from = "/extension"
+to = "https://github.com/turtlemay-target/turtlemay-target#turtlemays-target-extension"
+status = 302
+
+[[redirects]]
+from = "/cheatsheet/*"
+to = "https://github.com/turtlemay-target/T1058-Cheatsheet#target-checkout-cheat-sheet"
+status = 302
